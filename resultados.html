@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resultados por Categoría</title>
+  <link rel="stylesheet" href="resultados.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="victoria.png" alt="Escudo del Club" class="logo" />
+      <h1>Victoria De Chile</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="resultados.html">Resultados</a></li>
+      <li><a href="division.html">Divisiones</a></li>
+      <li><a href="historicos.html">Históricos</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h1>Resultados de los Partidos</h1>
+
+<div class="contenedor-flex">
+  <div class="acordeon-container" id="acordeonCategorias">
+    <!-- Se llenará dinámicamente -->
+  </div>
+
+  <div class="resultado" id="resultadoDisplay">
+    <div class="mensaje-inicial">
+      <p>Selecciona una categoría y un partido para ver los detalles.</p>
+    </div>
+  </div>
+</div>
+
+<script src="resultados.js"></script>
+</body>
+</html>

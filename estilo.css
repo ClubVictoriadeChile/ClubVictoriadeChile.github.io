@@ -1,0 +1,198 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ff0000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Logo en navbar */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Parallax */
+.parallax {
+  height: 600px;
+  background: url('los colores.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax img {
+  display: none;
+}
+
+/* Contenido secciones */
+.contenido {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: white;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Sección Sede */
+.Sede {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: white;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.Sede h2 {
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.Sede p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Transmisión en vivo */
+.transmision-en-vivo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  margin: 50px auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.transmision-en-vivo h2 {
+  font-size: 28px;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.transmision-en-vivo p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.boton-facebook {
+  background-color: #1877F2;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.boton-facebook:hover {
+  background-color: #0e5ec1;
+}
+
+/* Sección de ubicación a ancho completo */
+.ubicacion-full {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.ubicacion-full h2 {
+  padding: 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-size: 1.8em;
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 0.9em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .parallax {
+    height: 400px;
+    background-attachment: scroll;
+  }
+  
+  .contenido, .Sede {
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .transmision-en-vivo {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+}

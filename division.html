@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jugadores por División</title>
+  <!-- Vincular CSS -->
+  <link rel="stylesheet" href="division.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="victoria.png" alt="Escudo del Club" class="logo">
+        <h1>Victoria De Chile</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="resultados.html">Resultados</a></li>
+        <li><a href="division.html">Divisiones</a></li>
+        <li><a href="historicos.html">Historicos</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENEDOR DE TODO EL CONTENIDO PRINCIPAL -->
+  <main class="contenido">
+    <aside id="sidebar">
+      <h2>Divisiones</h2>
+      <ul id="divisiones-lista"></ul>
+    </aside>
+
+    <section id="jugadores-list">
+      <h3>Jugadores</h3>
+      <div id="jugadores-buttons">
+        <p>Selecciona una división</p>
+      </div>
+    </section>
+
+    <section id="detalle-jugador">
+      <h3>Detalle del Jugador</h3>
+      <p>Selecciona un jugador para ver detalles</p>
+    </section>
+  </main>
+
+  <!-- Vincular JS -->
+  <script src="division.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Históricos - Club Victoria De Chile</title>
+    <link rel="stylesheet" href="historicos.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="victoria.png" alt="Escudo del Club" class="logo" />
+      <h1>Victoria De Chile</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="resultados.html">Resultados</a></li>
+      <li><a href="division.html">Divisiones</a></li>
+      <li><a href="historicos.html">Históricos</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="seccion-historicos">
+    <h2>Jugadores y Equipos Históricos</h2>
+
+    <div class="controles-acordeon">
+      <button class="btn-toggle-all" onclick="toggleAllSections()">Expandir/Colapsar Todo</button>
+    </div>
+
+    <!-- Jugadores Históricos -->
+    <div class="categoria-historicos" data-section="jugadores">
+      <h3 class="categoria-header" onclick="toggleSection(this)">🏆 Jugadores Legendarios</h3>
+      <div class="categoria-content">
+
+        <article class="tarjeta-historico">
+          <div class="tarjeta-content">
+            <h4>Nano Caceres y Alejandro Herrera</h4>
+            <p class="posicion">Posición: Mediocampista</p>
+            <p>Leyendas Victorianas !!.... Hoy tenemos una fotografía que no sabemos de que año sera, pero lo que si sabemos es la calidad futbolistica que nos entregaron estos dos jugadorazos, El primero el Gran Nano Caceres que hoy observa desde el cielo como su Club sigue creciendo, aca la gente del Victoria de Chile te recordaremos por Siempre Nano ! y el segundo Jugador el Gran Alejandro Herrera desde acá tu Club deportivo te enviamos un abrazo fraterno a la distancia. Saludos Victorianos</p>
+          </div>
+          <div style="position: relative;">
+            <img src="historicos/Jugadores/nano caceres y alejandro herrera.jpg" alt="Nano Caceres y Alejandro Herrera" onclick="openModal(this)">
+            <div class="click-indicator">🔍 Click</div>
+          </div>
+        </article>
+
+        <article class="tarjeta-historico">
+          <div class="tarjeta-content">
+            <h4>Miguel "Mono" Morales</h4>
+            <p class="posicion">Posición: mediocampista</p>
+            <p>Leyendas Victorianas !!.... Presentamos a Miguel o mas conocido como mono, con una trayectoria desde las infantiles del club y hoy por hoy en las divisiones senior, siendo capitan de esta, miguel cuenta con una amplia trayectoria dentro del club en divisiones adultas, esperamos nos siga delumbrando con su magia</p>
+          </div>
+          <div style="position: relative;">
+            <img src="historicos/Jugadores/mono.jpg" alt="Miguel Mono Morales" onclick="openModal(this)">
+            <div class="click-indicator">🔍 Click</div>
+          </div>
+        </article>
+
+        <article class="tarjeta-historico">
+          <div class="tarjeta-content">
+            <h4>Jaime Perez</h4>
+            <p class="posicion">Posición: Defensa</p>
+            <p>Leyendas Victorianas !!.... El experimentado chico jaime, con años de trayectoria en el club que ya lo hacen pertenecer a las leyendas victorianas.</p>
+          </div>
+          <div style="position: relative;">
+            <img src="historicos/Jugadores/jaime.jpg" alt="Jaime Perez - Chico Jaime" onclick="openModal(this)">
+            <div class="click-indicator">🔍 Click</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Equipos Históricos -->
+    <div class="categoria-historicos equipos" data-section="equipos">
+      <h3 class="categoria-header" onclick="toggleSection(this)">🏆 Equipos Memorables</h3>
+      <div class="categoria-content">
+
+        <article class="tarjeta-historico equipo">
+          <div class="tarjeta-content">
+            <h4>Plantel 1984</h4>
+            <p class="periodo">Temporada 1984</p>
+            <p>Leyendas Victorianas !!.... Hoy les traemos nuestros infantiles de los años 80. Esta fotografía pertenece a nuestra Tercera Infantil del año 1984, nuestro semillero en esos años, en ese año volvimos del receso en la Liga de Gomez Carreño, un abrazo gigante de parte de Nuestro Club para los protagonistas de esta fotografía que hoy en día son padres de Familia. Ser Chileno es un Orgullo pero ser Victoriano es un Privilegio !!! saludos gente</p>
+          </div>
+          <div style="position: relative;">
+            <img src="historicos/Equipos/1984.jpg" alt="Plantel 1984 - Tercera Infantil" onclick="openModal(this)">
+            <div class="click-indicator">🔍 Click</div>
+          </div>
+        </article>
+
+        <article class="tarjeta-historico equipo">
+          <div class="tarjeta-content">
+            <h4>Plantel 1988</h4>
+            <p class="periodo">Temporada 1988</p>
+            <p>Leyendas Victorianas !!! ... Hoy les tenemos una fotografía del año 1988 se pueden apreciar jugadores y socios del club celebrando después de un triunfo de la Primera Adulta. Esa es la esencia del Victoria de Chile aunque se Gane o se Pierda, siempre llegamos a nuestro club a compartir, ese es el recuerdo que nos dejaron nuestros victorianos de antaño y que hoy en día perdura. Saludos a los Victorianos que salen en la fotografía y para otros un abrazo al cielo ! saludos Gente.</p>
+          </div>
+          <div style="position: relative;">
+            <img src="historicos/Equipos/1988.jpg" alt="Plantel 1988 - Celebración Primera Adulta" onclick="openModal(this)">
+            <div class="click-indicator">🔍 Click</div>
+          </div>
+        </article>
+
+        <article class="tarjeta-historico equipo">
+          <div class="tarjeta-content">
+            <h4>Plantel 2012</h4>
+            <p class="periodo">Temporada 2012</p>
+            <p>Leyendas Victorianas !!! ...... Hoy les traemos una fotografia del año 2012 en ella jugadores de 3º infantil que ese año salieron campeones y desde ese dia no pararon de obtener titulos a nuestra institución, son llamados la Generación Dorada, al lado de ellos una de las personas mas importantes de nuestra querida institución. un Victoriano que volvió de tierras lejanas para levantar la institución que en ese entonces estaba pasando malos momentos, el Negro Paty gran persona y exPresidente de nuestro club un abrazo al cielo para ti y un saludo a todos los niños que estuvieron en esa instancia que nos dieron una alegría enorme. Saludos Victorianos !!</p>
+          </div>
+          <div style="position: relative;">
+            <img src="historicos/Equipos/2012.jpg" alt="Plantel 2012 - Generación Dorada" onclick="openModal(this)">
+            <div class="click-indicator">🔍 Click</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Hall of Fame -->
+    <div class="categoria-historicos hall-fame" data-section="hall-fame">
+      <h3 class="categoria-header" onclick="toggleSection(this)">🎖️ Salón de la Fama</h3>
+      <div class="categoria-content">
+
+        <article class="tarjeta-historico hall-fame">
+          <div class="tarjeta-content">
+            <h4>Fundadores del Club</h4>
+            <p class="periodo">1952</p>
+            <p>Los visionarios que dieron vida al Club Victoria de Chile. Su legado perdura hasta hoy en cada partido, en cada entrenamiento y en cada nueva generación de jugadores.</p>
+            <div class="fundadores">
+              <div class="fundador">
+                <strong>Don Julio Morales</strong> - Primer Presidente
+              </div>
+              <div class="fundador">
+                <strong>Profesor Luis Silva</strong> - Primer Entrenador
+              </div>
+              <div class="fundador">
+                <strong>Sr. Antonio Pérez</strong> - Benefactor Principal
+              </div>
+            </div>
+          </div>
+          <div style="position: relative;">
+            <img src="fundadores.jpg" alt="Fundadores del Club Victoria de Chile 1952" onclick="openModal(this)">
+            <div class="click-indicator">🔍 Click</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<!-- MODAL PARA IMÁGENES -->
+<div class="modal-overlay" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <img class="modal-image" src="" alt="">
+        <div class="modal-caption"></div>
+    </div>
+</div>
+
+<script src="historicos.js"></script>
+</body>
+</html>
