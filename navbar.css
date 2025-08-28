@@ -1,0 +1,130 @@
+/* Navbar - Versión con mayor especificidad */
+header nav.navbar {
+  background-color: #ff0000 !important;
+  color: white !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 15px 30px !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+header nav.navbar ul {
+  list-style: none !important;
+  display: flex !important;
+  gap: 20px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+header nav.navbar ul li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+header nav.navbar a {
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  padding: 8px 15px !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+header nav.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Logo en navbar */
+header nav.navbar .logo-container {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+}
+
+header nav.navbar .logo-container h1 {
+  margin: 0 !important;
+  color: white !important;
+  font-size: 1.5em !important;
+}
+
+header nav.navbar .logo {
+  height: 50px !important;
+  width: 50px !important;
+  object-fit: contain !important;
+  border-radius: 50% !important;
+}
+
+/* RESPONSIVE - Para móviles y tablets */
+@media screen and (max-width: 768px) {
+  header nav.navbar {
+    flex-direction: column !important;
+    padding: 10px 15px !important;
+    gap: 15px !important;
+  }
+  
+  header nav.navbar .logo-container {
+    order: -1 !important;
+    margin-bottom: 10px !important;
+  }
+  
+  header nav.navbar .logo-container h1 {
+    font-size: 1.2em !important;
+  }
+  
+  header nav.navbar .logo {
+    height: 40px !important;
+    width: 40px !important;
+  }
+  
+  header nav.navbar ul {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+  
+  header nav.navbar a {
+    padding: 6px 12px !important;
+    font-size: 0.9em !important;
+  }
+}
+
+/* Para pantallas muy pequeñas (menos de 480px) */
+@media screen and (max-width: 480px) {
+  header nav.navbar {
+    padding: 8px 10px !important;
+  }
+  
+  header nav.navbar .logo-container h1 {
+    font-size: 1em !important;
+  }
+  
+  header nav.navbar .logo {
+    height: 35px !important;
+    width: 35px !important;
+  }
+  
+  header nav.navbar ul {
+    gap: 8px !important;
+  }
+  
+  header nav.navbar a {
+    padding: 5px 10px !important;
+    font-size: 0.8em !important;
+  }
+}
+
+/* Para tablets (768px a 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header nav.navbar {
+    padding: 12px 20px !important;
+  }
+  
+  header nav.navbar ul {
+    gap: 15px !important;
+  }
+}
